@@ -54,6 +54,10 @@
             <td><input id="t4590" onkeyup=update() onclick=update() type="number" value="0"></td>
         </tr>
         <tr>
+            <td>运输公里数</td>
+            <td><input id="t4690" onkeyup=update() onclick=update() type="number" value="0"></td>
+        </tr>
+        <tr>
             <td>总价</td>
             <td id="price">
                 0元
@@ -74,7 +78,8 @@
             var v4040 = document.getElementById("t4040").value;
             var v3030 = document.getElementById("t3030").value;
             var v9090 = document.getElementById("t9090").value;
-            var v4590 = document.getElementById("t4590").value;            
+            var v4590 = document.getElementById("t4590").value; 
+            var v4690 = document.getElementById("t4690").value;
             var price = 
                 v8080 * 150 +
                 v4080 * 200 +
@@ -84,6 +89,7 @@
                 v4040 * 50 +
                 v3030 * 100 +
                 v9090 * 150 +
+                V4690 * 1 +
                 v4590 * 200;
             document.getElementById("price").innerHTML = price + "元";
         }
