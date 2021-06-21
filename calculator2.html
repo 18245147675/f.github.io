@@ -3,54 +3,54 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>缝大师</title>
+    <title>源沐之家</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/w3.css">
     <style>tr:nth-child(even) {background-color: #f2f2f240;}</style>
 </head>
 
 <body>
-    <h3>缝大师加AA级品牌材料</h3>
-    <h3>美缝价格计算器</h3>
+    <h3>打包膜打包加运输价格计算器</h3>
+   
     <table class="w3-table" background="watermark.png">            
         <tr>
-            <th>瓷砖规格</th>
-            <th>瓷砖用量（片）</th>
+            <th>产品类型</th>
+            <th>数量</th>
         </tr>
         <tr>
-            <td>规格800*800</td>
+            <td>三门衣柜或书柜</td>
             <td><input id="t8080" onkeyup=update() onclick=update() type="number" value="0"></td>
         </tr>
         <tr>
-            <td>规格400*800</td>
+            <td>四门衣柜或书柜</td>
             <td><input id="t4080" onkeyup=update() onclick=update() type="number" value="0"></td>
         </tr>
         <tr>
-            <td>规格600*600</td>
+            <td>五门衣柜或书柜</td>
             <td><input id="t6060" onkeyup=update() onclick=update() type="number" value="0"></td>
         </tr>
         <tr>
-            <td>规格300*600</td>
+            <td>餐桌或字台或大茶几</td>
             <td><input id="t3060" onkeyup=update() onclick=update() type="number" value="0"></td>
         </tr>
         <tr>
-            <td>规格500*500</td>
+            <td>床</td>
             <td><input id="t5050" onkeyup=update() onclick=update() type="number" value="0"></td>
         </tr>
         <tr>
-            <td>规格400*400</td>
+            <td>床头柜等小件</td>
             <td><input id="t4040" onkeyup=update() onclick=update() type="number" value="0"></td>
         </tr>
         <tr>
-            <td>规格300*300</td>
+            <td>单人沙发</td>
             <td><input id="t3030" onkeyup=update() onclick=update() type="number" value="0"></td>
         </tr>
         <tr>
-            <td>规格900*900</td>
+            <td>双人沙发</td>
             <td><input id="t9090" onkeyup=update() onclick=update() type="number" value="0"></td>
         </tr>
         <tr>
-            <td>规格450*900</td>
+            <td>三人沙发</td>
             <td><input id="t4590" onkeyup=update() onclick=update() type="number" value="0"></td>
         </tr>
         <tr>
@@ -60,10 +60,10 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2">其他非常规规格请拨打4001819101预约免费上门服务</td>
+            <td colspan="2">请联系门店预约服务</td>        
         </tr>
     </table>
-            <h3>选择缝大师施工配合推荐AA级材料享受十年质保服务</h3>
+    <h3> </h3>
     <script>
         function update() {
             var v8080 = document.getElementById("t8080").value;
@@ -76,15 +76,15 @@
             var v9090 = document.getElementById("t9090").value;
             var v4590 = document.getElementById("t4590").value;            
             var price = 
-                v8080 * 12 +
-                v4080 * 9 +
-                v6060 * 9 +
-                v3060 * 1.35 +
-                v5050 * 7.5 +
-                v4040 * 6 +
-                v3030 * 4.5 +
-                v9090 * 13.5 +
-                v4590 * 10.13;
+                v8080 * 150 +
+                v4080 * 200 +
+                v6060 * 250 +
+                v3060 * 100 +
+                v5050 * 150 +
+                v4040 * 50 +
+                v3030 * 100 +
+                v9090 * 150 +
+                v4590 * 200;
             document.getElementById("price").innerHTML = price + "元";
         }
     </script>
