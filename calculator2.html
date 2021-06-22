@@ -100,7 +100,7 @@
                 v4590 * 200 +
                 v4690 * 1.5;
             var pricer = 
-                price + price * 0.2 * (v4790 - 1);
+                price + price * 0.2 * (v4790==1 ? 0 : v4790);
                 
             document.getElementById("price").innerHTML = pricer + "元";
         }
