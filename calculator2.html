@@ -86,7 +86,7 @@
             var v4690 = document.getElementById("t4690").value;
             var v4790 = document.getElementById("t4790").value;
             var price = 
-                (v8080 * 150 +
+                v8080 * 150 +
                 v4080 * 200 +
                 v6060 * 250 +
                 v3060 * 100 +
@@ -95,19 +95,11 @@
                 v3030 * 100 +
                 v9090 * 150 +
                 v4590 * 200 +
-                v4690 * 1.5)+ 
-                (v8080 * 150 +
-                v4080 * 200 +
-                v6060 * 250 +
-                v3060 * 100 +
-                v5050 * 150 +
-                v4040 * 50 +
-                v3030 * 100 +
-                v9090 * 150 +
-                v4590 * 200 +
-                v4690 * 1.5) *
-                 20% * v4790;
-            document.getElementById("price").innerHTML = price + "元";
+                v4690 * 1.5;
+            var pricer = 
+                price * 20% * v4790;
+                
+            document.getElementById("price").innerHTML = pricer + "元";
         }
     </script>
 
